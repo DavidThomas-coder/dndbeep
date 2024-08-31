@@ -1,6 +1,6 @@
 # Beeping Timer
 
-This project is a simple beeping timer implemented in HTML, CSS, and JavaScript. The timer starts at 60 seconds and counts down to zero, with a beeping sound that increases in frequency as the timer approaches zero. The timer is controlled by a button that starts and resets the countdown.
+This project is a simple beeping timer implemented in HTML, CSS, and JavaScript originally designed for a Dungeons & Dragons puzzle. The timer starts at 60 seconds and counts down to zero, with a beeping sound that increases in frequency as the timer approaches zero. The timer is controlled by a button that starts and resets the countdown.
 
 ## Features
 
@@ -20,5 +20,14 @@ This project is a simple beeping timer implemented in HTML, CSS, and JavaScript.
 
 - A modern web browser (Chrome, Firefox, Edge, etc.)
 - A local audio file named `beep-3.wav` (placed in the same directory as the HTML file).
+
+## Installation
+
+1. **Download or Clone the Repository**:
+   ```bash
+   git clone https://github.com/DavidThomas-coder/dndbeep.git
+Place the Audio File: Ensure that the beep.wav audio file is in the same directory as the index.html file.
+
+Open the HTML File: Double-click the index.html file to open it in your default web browser.
 
 
