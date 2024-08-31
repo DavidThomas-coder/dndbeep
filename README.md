@@ -26,8 +26,8 @@ This project is a simple beeping timer implemented in HTML, CSS, and JavaScript 
 1. **Download or Clone the Repository**:
    ```bash
    git clone https://github.com/DavidThomas-coder/dndbeep.git
-Place the Audio File: Ensure that the beep.wav audio file is in the same directory as the index.html file.
+2. Place the Audio File: Ensure that the beep.wav audio file is in the same directory as the index.html file.
 
-Open the HTML File: Double-click the index.html file to open it in your default web browser.
+3. Open the HTML File: Double-click the index.html file to open it in your default web browser.
 
 
