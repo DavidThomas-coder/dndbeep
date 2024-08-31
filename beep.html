@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beeping Timer</title>
+</head>
+<body>
+    <div>
+        <p id="timer-display">60</p>
+        <button id="start-reset-button">Start/Reset Timer</button>
+    </div>
+
+    <script>
+        let counter = 150;
+        let intervalId = null;
+
+        function startBeepingTimer() {
+            if (intervalId) clearInterval(intervalId);
+            beepAndCountdown();
+        }
+
+        function beepAndCountdown() {
+            intervalId = setInterval(() => {
+                document.getElementById('timer-display').textContent = counter;
+
+                // Make a beep sound
+                beep();
+
+                // Decrement the counter
+                counter--;
+
+                // Clear the interval and start a new one with a shorter delay
+                if (counter > 0) {
+                    clearInterval(intervalId);
+                    beepAndCountdown();
+                } else if (counter <= 0) {
+                    clearInterval(intervalId);
+                    alert("Time's up!");
+                }
+
+            }, 1000 - (1000 / 60) * (60 - counter)); // Shorter delay as counter decreases
+        }
+
+        function beep() {
+            let audio = new Audio('beep-3.wav'); // Reference to the local file
+            audio.play();
+        }
+
+        document.getElementById('start-reset-button').addEventListener('click', () => {
+            counter = 60;
+            startBeepingTimer();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
